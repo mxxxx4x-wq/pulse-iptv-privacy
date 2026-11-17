@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse IPTV – Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Pulse IPTV app for Android, Android TV, iPhone and Apple TV.">
+<style>
+  :root { --bg:#0b0e24; --card:#141838; --text:#e8eaf6; --sub:#a3a8cc; --accent:#8b7bff; --line:#262b55; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f5f6fb; --card:#ffffff; --text:#1b1e33; --sub:#5a6080; --accent:#5b4bdb; --line:#e3e5f0; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:8px; }
+  .logo { width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg,#7b5cff,#ff5ca8); display:grid; place-items:center; color:#fff; font-weight:800; }
+  h1 { font-size:28px; margin:0; }
+  .meta { color:var(--sub); font-size:14px; margin:0 0 28px; }
+  h2 { font-size:19px; margin:34px 0 8px; }
+  p, li { color:var(--text); }
+  ul { padding-left:22px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 20px; margin:14px 0; }
+  .note { border-left:4px solid var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--sub); font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:.04em; }
+  a { color:var(--accent); }
+  code { background:var(--card); padding:1px 6px; border-radius:6px; }
+  footer { color:var(--sub); font-size:13px; margin-top:44px; }
+  @media (max-width:560px) { table, thead, tbody, tr, th, td { display:block; } thead { display:none; } td { border:none; padding:2px 0; } tr { border-bottom:1px solid var(--line); padding:10px 0; } td:first-child { font-weight:600; } }
+</style>
+</head>
+<body>
+<main>
+  <header><div class="logo">P</div><h1>Pulse IPTV – Privacy Policy</h1></header>
+  <p class="meta">Effective 17 November 2026 · Applies to Pulse IPTV for Android, Android TV / Google TV, iPhone, iPad and Apple TV · Developer: Mohamed Elsisi</p>
+
+  <div class="card note">
+    <strong>In short:</strong> Pulse IPTV is a video player. It does not include any channels or content, shows no ads,
+    contains no analytics or tracking, and never sells your data. Your data stays on your device unless you
+    turn on the optional <em>Pulse Sync</em>, which stores it in your own sync account so your other devices can use it.
+  </div>
+
+  <h2>1. What Pulse IPTV is</h2>
+  <p>Pulse IPTV plays streams from an IPTV service that <em>you</em> subscribe to separately (for example an Xtream Codes
+  compatible provider). The developer does not provide, sell, host or control any channels, movies, series or other
+  content and has no relationship with any provider. A built-in demo uses openly licensed sample videos.</p>
+
+  <h2>2. Data stored on your device</h2>
+  <ul>
+    <li>Your IPTV account details: server address, username and password.</li>
+    <li>Favourites, Continue Watching progress, recently watched channels and your settings.</li>
+    <li>Saved movie information and IMDb ratings (a cache), and your OMDb key if you add one.</li>
+    <li>If the app closes unexpectedly, a short technical report so you can copy it and send it yourself. It is never sent automatically.</li>
+    <li>Videos you choose to download.</li>
+  </ul>
+  <p>This data is removed when you delete the profile in the app, clear the app's storage, or uninstall the app.</p>
+
+  <h2>3. Data sent from your device</h2>
+  <table>
+    <thead><tr><th>Sent to</th><th>What</th><th>When / why</th></tr></thead>
+    <tbody>
+      <tr><td>Your IPTV provider</td><td>Your username and password, the channel or title you open</td><td>To sign in, load your lists and play videos. The provider's own privacy policy applies to what it does with this.</td></tr>
+      <tr><td>OMDb (omdbapi.com)</td><td>A title and year, plus your OMDb key</td><td>Only if you add an OMDb key, to show IMDb ratings and details.</td></tr>
+      <tr><td>Google Firebase (Pulse Sync)</td><td>See section 4</td><td>Only if you sign in to Pulse Sync.</td></tr>
+      <tr><td>Google Cast / AirPlay device</td><td>The address of the video you cast</td><td>Only when you cast to a TV or speaker.</td></tr>
+      <tr><td>YouTube</td><td>The trailer you open</td><td>Only when you tap "Watch trailer".</td></tr>
+    </tbody>
+  </table>
+  <p>All connections the app makes to Firebase and OMDb are encrypted (HTTPS). Connections to your IPTV provider use whatever
+  address your provider gives you; many providers use plain HTTP.</p>
+
+  <h2>4. Pulse Sync (optional)</h2>
+  <p>Pulse Sync keeps your phone, tablet and TVs in step. If you sign in with Google, the following is stored in Google
+  Firebase (Firebase Authentication and Cloud Firestore), linked to your sync account:</p>
+  <ul>
+    <li>Your Google account's email address and a user ID.</li>
+    <li>Your IPTV accounts (name, server, username, password and OMDb key), so a new device can sign in by itself.</li>
+    <li>Favourites and watch progress for each IPTV account.</li>
+    <li>The names of TVs you link to your account.</li>
+  </ul>
+  <p>This data is used only to sync your own devices. It is not shared with anyone else, not used for advertising and not
+  analysed. It is encrypted in transit and stored by Google as the developer's service provider
+  (<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy information</a>).
+  It is kept until you delete it (section 5).</p>
+
+  <h2 id="delete">5. Deleting your data</h2>
+  <div class="card">
+    <p style="margin-top:0"><strong>Delete your Pulse Sync account and data:</strong></p>
+    <ul>
+      <li><strong>In the app:</strong> Settings › Sync › <em>Delete my sync data</em> (on the phone or tablet you signed in on).
+        This deletes your stored IPTV accounts, favourites, watch progress, linked TVs and the sync account itself, straight away.</li>
+      <li><strong>Without the app:</strong> email <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a> from the Google account you used,
+        with the subject "Delete Pulse Sync data". Everything is deleted within 30 days and you get a confirmation.</li>
+    </ul>
+    <p style="margin-bottom:0"><strong>Data on your device:</strong> delete the profile in the app, or uninstall the app.</p>
+  </div>
+
+  <h2>6. What we don't do</h2>
+  <ul>
+    <li>No advertising and no advertising IDs.</li>
+    <li>No analytics, tracking or profiling.</li>
+    <li>No selling or sharing of personal data.</li>
+    <li>No location, contacts, photos, microphone or camera access. (The camera is only used, on your request, by Google Play services' code scanner to link a TV, and nothing is saved.)</li>
+  </ul>
+
+  <h2>7. Children</h2>
+  <p>Pulse IPTV is not directed at children under 13 and does not knowingly collect their data. A parental PIN can hide adult categories.</p>
+
+  <h2>8. Changes</h2>
+  <p>If this policy changes, the new version is posted on this page with a new effective date.</p>
+
+  <h2>9. Contact</h2>
+  <p>Mohamed Elsisi · <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a></p>
+
+  <footer>Pulse IPTV is a media player. All trademarks belong to their owners. The developer is not affiliated with any IPTV provider.</footer>
+</main>
+</body>
+</html>
